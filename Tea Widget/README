@@ -12,3 +12,23 @@ Titanium is Copyright (c) 2009-2013 by Appcelerator, Inc. All Rights Reserved.
 
 Titanium is licensed under the Apache Public License (Version 2). Please
 see the LICENSE file for the full license.
+
+Reviewer 1 Peer assessment of assignment 3
+
+I've tested the code on titanium and it seems to be working, but the first issue 
+I see is that I don't see a navigation window in your code (Note- actually I read 
+your code later today how how you created a newWin variable so that should count as 
+navigation, but in your tilt.js file there doesn't seem to be code to go back to the 
+other window). A solution for that issue would simply create another button something 
+like this listed below and you should be good to go.
+
+NavButton2.addEventListener('click', function() {
+	Ti.API.info('Clicked Home Button');
+	win2.close();
+});
+
+From titanium there doesn't seem to be any errors appearing and all of your colors 
+and case buttons are there too so that's a good job. You're using the accelerometer 
+from page 158, chapter 7, but when I tried using it in titanium by hitting the accelerometer 
+button I would be able to go there, but when I try to tilt my computer it wouldn't do anything. 
+Overall it's good work, but you need to fix the navigation window and then you're all set.
